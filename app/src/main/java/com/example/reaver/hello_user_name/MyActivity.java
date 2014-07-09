@@ -23,7 +23,7 @@ public class MyActivity extends Activity implements View.OnClickListener {
         sayHi = (Button) findViewById(R.id.button);
         sayHi.setOnClickListener(this);
         enterField = (EditText) findViewById(R.id.editText);
-        textView = (TextView) findViewById(R.id.textView2);
+        textView = (TextView) findViewById(R.id.textView);
     }
 
 

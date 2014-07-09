@@ -7,35 +7,39 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/views_margin"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text=""
-        android:textSize="25sp"
-        android:id="@+id/textView2"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/textView"
         android:textColor="@android:color/holo_red_dark"
         android:layout_gravity="center" />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_height="50dp"
-        android:background="#7fb3b3b3">
+        android:layout_height="@dimen/horizontal_layout_height"
+        android:layout_marginTop="@dimen/views_margin"
+        android:layout_marginLeft="@dimen/views_margin"
+        android:layout_marginRight="@dimen/views_margin"
+        android:background="@color/horizontal_layout_color"
+        android:paddingTop="@dimen/horizontal_layout_padding"
+        android:paddingBottom="@dimen/horizontal_layout_padding"
+        android:paddingRight="@dimen/horizontal_layout_padding"
+        android:paddingLeft="@dimen/horizontal_layout_padding">
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/editText"
             android:layout_weight="1"
-            android:hint="Enter username" />
+            android:hint="@string/username_hint" />
 
         <Button
-            android:layout_width="100dp"
+            android:layout_width="@dimen/button_width"
             android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:text="Get hello"
+            android:layout_marginLeft="@dimen/views_margin"
+            android:text="@string/button_text"
             android:id="@+id/button" />
     </LinearLayout>
 
