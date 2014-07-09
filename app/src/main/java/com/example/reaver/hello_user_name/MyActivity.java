@@ -4,15 +4,29 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 
-public class MyActivity extends Activity {
+public class MyActivity extends Activity implements View.OnClickListener {
+    private Button sayHi;
+    private EditText enterField;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
+
+        sayHi = (Button) findViewById(R.id.button);
+        sayHi.setOnClickListener(this);
+        enterField = (EditText) findViewById(R.id.editText);
+        textView = (TextView) findViewById(R.id.textView2);
     }
+
+
 
 
     @Override
@@ -32,5 +46,13 @@ public class MyActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View view) {
+        if ( view.getId() == R.id.button ) {
+            textView.setText("Hello, ".concat(enterField.getText().toString()));
+            enterField.setText("");
+        }
     }
 }
