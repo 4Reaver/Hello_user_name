@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text=""
+        android:textSize="25sp"
         android:id="@+id/textView2"
         android:textColor="@android:color/holo_red_dark"
         android:layout_gravity="center" />
@@ -16,20 +17,20 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:background="#7fb3b3b3">
 
         <EditText
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/editText"
             android:layout_weight="1"
             android:hint="Enter username"/>
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Get greeting"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Get hello"
             android:id="@+id/button" />
     </LinearLayout>
 
